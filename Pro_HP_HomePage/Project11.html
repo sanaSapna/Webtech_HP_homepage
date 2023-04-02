@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP</title>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+    #hdiv {
+        background-color: white;
+        border-bottom: 1px solid rgb(192, 187, 187);
+        height: 20vh;
+        width: 100%;
+    }
+    #hplogo {
+        height: 10vh;
+        width: 10vh;
+        background-image: url('hplogo.png');
+        background-size: cover;
+        margin-top: 2vh;
+        position: relative;
+        left: 2vw;
+    }
+    #searchbar {
+        border: 1px solid rgb(212, 194, 194);
+        height: 6vh;
+        width: 49.5vw;
+        position: absolute;
+        top: 4vh;
+        left: 8vw;
+    }
+    #iptbox {
+        width: 92%;
+        height: 92%;
+        border: none;
+
+    }
+    #searchlogo {
+        width: 7.6%;
+        height: 100%;
+        background-image: url('searchlogo.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -6vh;
+        left: 46.2vw;
+    }
+    #menulist {
+        margin-left: 8vw;
+        margin-top: 2.2vh;
+        width: 70vw;
+    }
+    li {
+        list-style: none;
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 1vw;
+        font-size: 1.1em;
+    }
+    li:hover {
+        color: red;
+        font-weight: bold;
+        text-decoration-line: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: black;
+
+    }
+    li:visited {
+        color: red;
+        font-weight: bold;
+        text-decoration-line: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: black;
+    }
+    #contact {
+        height: 3vh;
+        width: 11vw;
+        position: absolute;
+        top: 10vh;
+        right: 3vw;
+        font-size: larger;
+    }
+    #conimg
+    {
+        height: 5vh;
+        width: 11vw;
+        position: absolute;
+        right: 3vw;
+        top: 15vh;
+    }
+    #conimg
+    {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .conlogo
+    {
+        height: 90%;
+        width: 2vw;  
+    }
+    #mdiv {
+
+        height: 70vh;
+        width: 99vw;
+        margin: 0.5vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .items
+    {
+        height: 100%;
+        width: 30%;
+    }
+    .itemimg
+    {
+        height: 70%;
+    }
+    .itemdes
+    {
+        height: 30%;
+    }
+    #iimg1, #iimg2, #iimg3
+    {
+        border: 0.1px solid gray;
+        height: 100%;
+        width: 100%;
+    }
+    .destitle
+    {
+        font-weight: bold;
+        font-size: 2vw;
+    margin-top: 1vh;
+    }
+    .desstitle
+    {
+        font-size: 1.5vw;
+        margin-top: 1vh;
+    }
+    .shop
+    {
+        font-size: 1.5vw;
+        margin-top: 1vh;
+        color: rgb(45, 45, 207);
+    }
+</style>
+<body>
+    <div id="hdiv">
+
+        <div id="hplogo">
+        </div>
+        <div id="searchbar">
+            <input type="text" id="iptbox" placeholder="What are you looking for?">
+            <div id="searchlogo">
+            </div>
+        </div>
+        <div id="menulist">
+            <a href="#"><li>Business Solution</li></a>
+            <a href="#"><li>Laptops</li></a>
+            <a href="#"><li>Desktops</li></a>
+            <a href="#"><li>Printers</li></a>
+            <a href="#"><li>Ink & Toner</li></a>
+            <a href="#"><li>Monitors</li></a>
+            <a href="#"><li>Accessories</li></a>
+            <a href="#"><li>Care Pack</li></a>
+            <a href="#"><li>Sale</li></a>
+            <a href="#"><li>Tech Takes</li></a>
+            <a href="#"><li>Supports</li></a>
+        </div>
+        <div id="contact">Sales:1800-419-4962</div>
+        <div id="conimg">
+        <img src="phonelogo.png" class="conlogo">
+        <img src="cartlogo.png" class="conlogo">
+        <img src="loclogo.png" class="conlogo">
+        <img src="userlogo.png" class="conlogo">
+        </div>
+    </div>
+    <div id="mdiv">
+        <div class="items">
+            <div class="itemimg"><img src="1.jpg" id="iimg1"></div>
+            <div class="itemdes">
+                <div class="destitle">Latest & Greatest 2022</div>
+                <div class="desstitle">The best HP laptops, curated for you</div>
+                <div class="shop"><b>Shop Now</b> &nbsp; &nbsp;&nbsp; > </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="itemimg"><img src="2.jpg" id="iimg2"></div>
+            <div class="destitle">LIMITED PERIOD OFFER</div>
+            <div class="desstitle">Free Accessories with select ZBook purchases</div>
+            <div class="shop"><b>Shop Now</b> &nbsp; &nbsp;&nbsp; > </div>
+        </div>
+        <div class="items">
+            <div class="itemimg"><img src="3.jpg" id="iimg3"></div>
+            <div class="destitle">DesignJet Printers</div>
+            <div class="desstitle">Easy printing with free Ink and Warranty<sup>*</sup></div>
+            <div class="shop"><b>Shop Now</b> &nbsp; &nbsp;&nbsp; > </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
